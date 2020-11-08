@@ -1,0 +1,222 @@
+.item{
+    text-decoration: none;
+  }
+  *{
+      margin: 0px;
+      padding: 0px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  /* Navigation bar */
+  #navbar{
+      display: flex;
+      position: sticky;
+      top: 0px;
+      align-items: center;
+     
+     }
+     
+     #navbar::before{
+         content: "";
+         background-color: black;
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.4;
+         top: 0px;
+         left: 0px;
+      
+     }
+  #logo{
+      margin: 20px 30px;
+      height: 50px;
+  }
+  #navbar ul{
+      display: flex;
+    
+  }
+  #navbar ul li{
+   list-style: none;
+  
+  }
+  #navbar ul li a{
+      color: white;
+      padding: 4px 20px;
+      display: block;
+      text-decoration: none;
+       
+     }
+     #navbar ul li a:hover{
+     color: black;  
+     background-color: blanchedalmond;
+     text-decoration: underline;
+     border-radius: 12px;
+     
+     }
+     #home{
+         padding: 3px 200px;
+         height: 620px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     #home::before{
+      content: "";
+      background:url('../static/img/paper-1074131_1280.jpg');
+      position: absolute;
+      
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.89;
+  }
+  #home h1{
+      color: white;
+      text-align: center;
+  }
+  #home p{
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;    
+  }
+  /* Utility Classes */
+  .h-primary{
+      font-size: 3.8rem;
+      padding: 12px;
+  }
+  .h-secondary{
+      font-family: cursive;
+      font-size: 2.3rem;
+      padding: 12px;
+     
+  }
+  .btn{
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      border: 2px solid white;
+      padding: 6px 20px;
+      margin-top: 40px;
+      cursor: pointer;
+      font-size: 20px;
+      margin: auto;
+  }
+  .btn:hover{
+      background-color: brown;
+      text-decoration: underline;
+  }
+  .h-primaryB{
+      padding-top: 60px;
+      margin-top: auto;
+      text-align: center;
+      font-size: 40px;
+  }
+  
+  #services{
+      
+      margin: 34px;
+      display: flex;
+    
+      
+  }
+  .img{
+      filter: blur(2px);
+  }
+  
+  #services .box{
+    
+      border: 2px solid brown;
+      padding: 34px;
+      margin: 3px 6px;
+      border-radius: 25px;
+      background-color: white;
+      
+  }
+  #services .box:hover{
+    
+   transform: rotate(30deg);
+  }
+  
+  #services .box img{
+  
+   height: 150px;
+   display: block;
+   margin: auto;
+  
+   
+  }
+  
+  #client-section{
+  
+    position: relative;
+  }
+  #clients{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .client-item{
+      padding: 40px;
+  }
+  #clients img{
+      height: 124px;
+     
+  }
+  #clients img:hover{
+    cursor: pointer;
+     
+  }
+  #client-section::before{
+      content: "";
+      position: absolute;
+      background: url('../static/img/Apple-logo-black-and-white.png');
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+  }
+  /* appointment styling */
+  #appointment{
+      position: relative;
+      margin-top: 20px;
+      
+    }
+    #appointment::before{
+        content: "";
+        background: url('../static/img/pexels-pixabay-247786.jpg');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    #appointment-box{
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 34px;
+  
+  }
+  #appointment-box input,
+  #appointment-box textarea{
+      width: 100%;
+      padding:0.5rem;
+      border-radius: 10px;
+      
+  }
+  #appointment-box form{
+      width: 40%;
+   
+  }
+  #appointment-box label{
+      font-size: 1.3rem;
+      font-family: 'Times New Roman', Times, serif;
+      
+  }
